@@ -1,0 +1,26 @@
+{
+  "name": "rlk-ns",
+  "version": "1.0.0",
+  "description": "New Line",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DariMax/RLK_NS.git"
+  },
+  "author": "Modas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DariMax/RLK_NS/issues"
+  },
+  "homepage": "https://github.com/DariMax/RLK_NS#readme"
+}
