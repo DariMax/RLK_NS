@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #7d879c;
+  --gray-dark: #373f50;
+  --primary: #fe696a;
+  --secondary: #f3f5f9;
+  --success: #42d697;
+  --info: #69b3fe;
+  --warning: #fea569;
+  --danger: #f34770;
+  --light: #fff;
+  --dark: #373f50;
+  --accent: #4e54c8;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1280px;
+  --font-family-sans-serif: "Rubik", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4b566b;
+    text-align: left;
+    background-color: #fff;
+  }
+
+ /*Шапка сайта*/
+/*000001*/
+.logo img{
+  width:59px;
+  height: 51px ;
+}
+
+/*000002*/
+.header {
+  background-color: #000;
+  /* height: 100%; */
+}
+
+/*000003*/
+.logo {
+  color: antiquewhite;
+  /*убираем подчеркивание */
+  text-decoration: none;
+}
+/*000004*/
+.logo:hover {
+  text-decoration: none;
+  /*цвет при навидении*/
+  color: #FAFAD7;
+} 
+
+/*000005*/
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+  /*Центрирую корзину по вертикали*/
+  align-items: center;
+}
+
+/*000006*/
+.basket-counter{
+  margin-left: 10px;
+  color: antiquewhite;
+  /*Прижимаю надписи к левому краю*/
+  text-align: right;
+}
+
+/*000007*/
+.header-right img {
+  width: 25px;
+  height: 25px;
+}
+
+/*hero section*/
+.btn-primary {
+    color: #fff;
+    background-color: #fe696a;
+    border-color: #fe696a;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #fe4344;
+    border-color: #fe3638;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.bg-position-center-top {
+    background-position: center top !important;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat !important;
+}
+
+.pt-10,
+.py-10 {
+  padding-top: 10rem !important;
+}
+
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+.pt-md-10,
+.py-md-10 {
+  padding-top: 10rem !important;
+}
+
+.pb-md-10,
+.py-md-10 {
+  padding-bottom: 10rem !important;
+}
+
+.pt-lg-5,
+.py-lg-5 {
+  padding-top: 3rem !important;
+}
+
+.mt-lg-4,
+.my-lg-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+
+.text-light {
+    color: #fff !important;
+  }
+
+.mr-grid-gutter,
+.mx-grid-gutter {
+margin-right: 30px !important;
+}  
+
+.font-size-lg {
+    font-size: 1.125rem !important;
+}
+
+.icon-cart_for_card:before {
+    content: "\e900";
+}

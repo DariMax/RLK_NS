@@ -1,0 +1,24 @@
+include header
+
+header.container-fluid.header
+  .container
+    .row
+      .col.header-left
+        a.logo(href='#' role='button')
+          img(src='images/logo.png' alt='logo')
+          |                         RLK
+      .col.header-right
+        a(href='#')
+          img(src='images/shop_cart.svg' alt='cart')
+        #basket.basket-counter
+          | Goods: 
+          span#basket-count 0
+          br
+          |                         Total: 
+          span#basket-price 0
+
+include hero_section
+
+script(src='assets/bootstrap-4.5.2-dist/js/jquery-3.5.1.js')
+script(src='assets/bootstrap-4.5.2-dist/js/bootstrap.js')
+
