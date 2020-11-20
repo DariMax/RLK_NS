@@ -1,21 +1,6 @@
-include header
+include head
 
-header.container-fluid.header
-  .container
-    .row
-      .col.header-left
-        a.logo(href='#' role='button')
-          img(src='images/logo.png' alt='logo')
-          |                         RLK
-      .col.header-right
-        a(href='#')
-          img(src='images/shop_cart.svg' alt='cart')
-        #basket.basket-counter
-          | Goods: 
-          span#basket-count 0
-          br
-          |                         Total: 
-          span#basket-price 0
+include header
 
 include hero_section
 

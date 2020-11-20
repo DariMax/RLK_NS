@@ -1,5 +1,12 @@
+include head
 include header
 
 h2 My Shop
+each val in goods
+    p #{val['name']}
+    img(
+        src = 'images/'+val['image']
+    )
+
 
 include footer

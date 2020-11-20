@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
+    "mysql2": "^2.2.5",
     "nodemon": "^2.0.6",
     "pug": "^3.0.0",
     "to": "^0.2.9",

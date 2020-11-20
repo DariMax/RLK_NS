@@ -34,6 +34,9 @@ let mysql = require('mysql2');
      database: "rlk_shop"
  });
 
+
+
+
 //Далее, чтобы запустить первое приложение нужно:
 //get - метод обращения, первый параметр url адрес куда идет обращение (путь)
 // у функции будет два параметра запрос и ответ
@@ -42,63 +45,19 @@ app.get('/',function(req,res){
         `SELECT * FROM goods`,
         function(error,result){
             if(error) throw err;
-
-            let goods = {};
-            for(let i = 0; i < result.length; i++){
-                goods[result[i]['id']] = result[i];
-            }
-            // console.log(JSON.parse(JSON.stringify(goods)));
-            res.render('main',{
-                //проброс данных на страницу в pug
-                goods : JSON.parse(JSON.stringify(goods))
-            });
-        }); 
-        }       
+            console.log(result);
+        }
+        
     );
 
+    //console.log(req.params);
+    //ответим
+    //res.end('hello');
+   res.render('index');
+}); 
 
-// app.get('/category',function(req,res){
-//     // console.log(req.query.id);
-//     // res.render('category',{});
-//     let catId = req.query.id;
-//     con.query(
-//         `SELECT * FROM category WHERE id=${catId}`,
-//        (error,result) => {
-//             if(error) throw err;
-//             console.log(JSON.parse(JSON.stringify(result)));
-//         });        
-// });
-
-
-
-app.get('/category', function (req, res) {
-    console.log(req.query.id);
-    let catId = req.query.id;
+app.get('/cat',function(req,res){
   
-    // Первый промис
-    let category = new Promise(function(resolve, reject){
-        con.query(
-            `SELECT * FROM category WHERE id=`+catId,
-            function(error,result){
-                if(error) reject(err);
-            resolve(result);
-        });
-    });
-
-    // Второй промис
-    let goods = new Promise(function(resolve, reject){
-        con.query(
-            `SELECT * FROM goods WHERE category=`+catId,
-            function(error,result){
-                if(error) reject(err);
-            resolve(result);
-        });
-    });
-  
-    Promise.all([category, goods]).then(function(value){
-      console.log(value[0]);
-       res.render('category',{});
-    })
 });
 
 app.listen(port ,function(){

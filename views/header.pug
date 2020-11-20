@@ -1,20 +1,16 @@
-html
-    head
-        meta(charset = 'utf-8')
-        meta(
-            name = 'viewport'
-            content = 'width=device-width, initial-scale=1.0'
-        )
-        
-        link(
-            rel = 'stylesheet'
-            href = 'assets/bootstrap-4.5.2-dist/css/bootstrap.css'
-        )
-        link(
-            rel = 'stylesheet'
-            href = 'css/hero_section.css'
-        )
-        link(rel='stylesheet' href='assets/icomoon-v1.0 (1)/fonts/icomoon.ttf')
-        link(rel='stylesheet' href='assets/icomoon-v1.0 (1)/style.css')
-        title main page
-    body
+header.container-fluid.header
+  .container
+    .row
+      .col.header-left
+        a.logo(href='#' role='button')
+          img(src='images/logo.png' alt='logo')
+          |                         RLK
+      .col.header-right
+        a(href='#')
+          img(src='images/shop_cart.svg' alt='cart')
+        #basket.basket-counter
+          | Goods: 
+          span#basket-count 0
+          br
+          |                         Total: 
+          span#basket-price 0
