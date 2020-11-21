@@ -1,0 +1,139 @@
+main > .container{
+    padding: 0;
+}
+
+.card{
+    /* #1 добавил, чтобы кнопку оплаты привязать*/
+    position: relative;
+    border: 0;
+}
+
+.col{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.products{
+    display: flex;
+    margin-top: 60px ;
+    justify-content: space-between;
+
+}
+
+.product{
+    display: block;
+    width: 263px;
+    height: 364px;
+    text-decoration: none;
+    margin-bottom: 39px;
+}
+
+.product:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 8px 0px
+    rgba(0,0,0,0.16);
+}
+
+.product img{
+  width: 100%;
+  height: 279px;
+} 
+
+.product p{
+    color: #222222;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+} 
+
+.product span{
+    color: #f16d7f;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+} 
+
+.product-text{
+      padding: 20px 14px 10px;
+}
+
+.product:hover img{
+    filter: brightness(50%);
+}
+
+/* #1 Кнопка всплытие оплаты*/
+.product-floating-btn {
+    position: absolute;
+    right: .75rem;
+    bottom: 2.75rem;
+    /* transition: opacity .2s ease-in-out;
+    opacity: 0;
+    z-index: 10; */
+  }
+  
+  /* .product:hover .product-floating-btn {
+    opacity: 1;
+  } */
+
+  .btn-lg{
+    padding: 0.425rem 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    border-radius: 0.1875rem;
+    border-color:  transparent;
+  }
+
+  .product-floating-btn .plus-to-cart{
+      display: inline-block;
+      padding-right: 4px;
+      color:black;
+  }
+
+  /*Размер svg картинки*/
+    .product-floating-btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+
+    /*цвет кнопки*/
+  .btn-primary {
+    color: #fff;
+    background-color: #fe696a;
+    border-color: #fe696a;
+    box-shadow: none;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #fe4344;
+    border-color: #fe3638;
+  }
+  
+  .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #fe4344;
+    border-color: #fe3638;
+    box-shadow: 0 0 0 0 rgba(254, 128, 128, 0.5);
+  }
+  
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #fe696a;
+    border-color: #fe696a;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #fe3638;
+    border-color: #fe2a2b;
+  }
+  
+  .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0 rgba(254, 128, 128, 0.5);
+  }

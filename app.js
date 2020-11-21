@@ -97,7 +97,10 @@ app.get('/category', function (req, res) {
   
     Promise.all([category, goods]).then(function(value){
       console.log(value[0]);
-       res.render('category',{});
+       res.render('category',{
+           cat: JSON.parse(JSON.stringify(value[0])),
+           goods: JSON.parse(JSON.stringify(value[1]))
+       });
     })
 });
 

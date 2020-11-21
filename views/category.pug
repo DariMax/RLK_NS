@@ -4,6 +4,15 @@ include header
 .container.d-flex.justify-content-center
     h2 Product category
 
+main(class = 'products')
+    div(class = 'container')
+        div(class = 'row justify-content-center')
+            each val in goods
+                include card
 
+                                    
+//- div(class = 'container')    
+//-     h2 #{category[0]['category']}
+//-     div #{category[0]['discription']}
 
 include footer
