@@ -1,0 +1,21 @@
+div(class = 'card')
+    div(class = 'col')
+        a(
+            href='#'
+            class='product'
+        )
+            img(
+                src = 'images/'+val['image'] alt = 'product image'
+            )
+            div(class = 'product-text')
+                p #{val['name']}
+                span $#{val['cost']}
+
+                div(class = 'product-floating-btn')    
+                    button(
+                        data-goods_id = val['id']
+                        class = 'btn btn-primary btn-shadow btn-lg'
+                        type = 'button' 
+                    ) 
+                        span(class = 'plus-to-cart') +
+                        img(src = 'img/cart_for_card.svg')
